@@ -1,0 +1,1380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9200C6C71775F00A005CF03D /* UnreliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6C61775F00A005CF03D /* UnreliableSocket.m */; };
+		9200C6C81775F00A005CF03D /* UnreliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6C61775F00A005CF03D /* UnreliableSocket.m */; };
+		9200C6CB1775F01A005CF03D /* TestUnreliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6CA1775F01A005CF03D /* TestUnreliableSocket.m */; };
+		9200C6D617760E7C005CF03D /* BatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6D517760E7C005CF03D /* BatteryMonitor.m */; };
+		9200C6D717760E7C005CF03D /* BatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6D517760E7C005CF03D /* BatteryMonitor.m */; };
+		9200C6DA17760E93005CF03D /* VirtualBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6D917760E93005CF03D /* VirtualBatteryMonitor.m */; };
+		9200C6DB17760E93005CF03D /* VirtualBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6D917760E93005CF03D /* VirtualBatteryMonitor.m */; };
+		9200C6DE17760EB2005CF03D /* TestVirtualBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6DD17760EB2005CF03D /* TestVirtualBatteryMonitor.m */; };
+		9200C6E117760EC3005CF03D /* TestBatteryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C6E017760EC3005CF03D /* TestBatteryMonitor.m */; };
+		9201E70B1794B00C0025F4FD /* DetachedThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 9201E70A1794B00C0025F4FD /* DetachedThread.c */; };
+		9201E70C1794B00C0025F4FD /* DetachedThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 9201E70A1794B00C0025F4FD /* DetachedThread.c */; };
+		9201E7121794B0B90025F4FD /* TestDetachedThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9201E7111794B0B90025F4FD /* TestDetachedThread.m */; };
+		92347CF417638EE400786828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92347CF317638EE400786828 /* Foundation.framework */; };
+		92347CFB17638EE400786828 /* Drone_Foundation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92347CFA17638EE400786828 /* Drone_Foundation.1 */; };
+		92347D0617638F0400786828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92347CF317638EE400786828 /* Foundation.framework */; };
+		92347D0917638F0400786828 /* TestDroneFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D0817638F0400786828 /* TestDroneFoundation.m */; };
+		92347D0D17638F0400786828 /* Drone_Foundation_Testing.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92347D0C17638F0400786828 /* Drone_Foundation_Testing.1 */; };
+		92347D1217638F4300786828 /* Phidget21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92347D1117638F4300786828 /* Phidget21.framework */; };
+		92347D1317638F4300786828 /* Phidget21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92347D1117638F4300786828 /* Phidget21.framework */; };
+		92347D21176398E900786828 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D20176398E900786828 /* NSMutableArray+Queue.m */; };
+		92347D22176398E900786828 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D20176398E900786828 /* NSMutableArray+Queue.m */; };
+		92347D25176398F600786828 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D24176398F600786828 /* NSMutableArray+Stack.m */; };
+		92347D26176398F600786828 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D24176398F600786828 /* NSMutableArray+Stack.m */; };
+		92347D291763990900786828 /* NSArray+CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D281763990900786828 /* NSArray+CSV.m */; };
+		92347D2A1763990900786828 /* NSArray+CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D281763990900786828 /* NSArray+CSV.m */; };
+		92347D2D176399CC00786828 /* TestNSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D2C176399CC00786828 /* TestNSMutableArray+Queue.m */; };
+		92347D30176399DF00786828 /* TestNSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D2F176399DF00786828 /* TestNSMutableArray+Stack.m */; };
+		92347D331763B69700786828 /* TestNSArray+CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D321763B69700786828 /* TestNSArray+CSV.m */; };
+		92347D9E1763D0A500786828 /* GPSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D991763D0A500786828 /* GPSCoordinate.m */; };
+		92347D9F1763D0A500786828 /* GPSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D991763D0A500786828 /* GPSCoordinate.m */; };
+		92347DA01763D0A500786828 /* GPSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D9B1763D0A500786828 /* GPSFormatter.m */; };
+		92347DA11763D0A500786828 /* GPSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D9B1763D0A500786828 /* GPSFormatter.m */; };
+		92347DA21763D0A500786828 /* GPSNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D9D1763D0A500786828 /* GPSNavigation.m */; };
+		92347DA31763D0A500786828 /* GPSNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347D9D1763D0A500786828 /* GPSNavigation.m */; };
+		92347DAE1763D11000786828 /* TestLowPassDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DAD1763D11000786828 /* TestLowPassDataFilter.m */; };
+		92347DB11763D32F00786828 /* TestHighPassDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DB01763D32F00786828 /* TestHighPassDataFilter.m */; };
+		92347DB41763D4E000786828 /* TestCompassBearing.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DB31763D4E000786828 /* TestCompassBearing.m */; };
+		92347DBB1763D65800786828 /* TestGPSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DBA1763D65800786828 /* TestGPSCoordinate.m */; };
+		92347DC21763DB4400786828 /* TestGPSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DC11763DB4400786828 /* TestGPSFormatter.m */; };
+		92347DC51763DEC500786828 /* TestGPSNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DC41763DEC500786828 /* TestGPSNavigation.m */; };
+		92347DCC1763E49100786828 /* PhidgetGPSReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DCB1763E49100786828 /* PhidgetGPSReader.c */; };
+		92347DCD1763E49100786828 /* PhidgetGPSReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DCB1763E49100786828 /* PhidgetGPSReader.c */; };
+		92347DD41763E4E600786828 /* TestPhidgetGPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DD31763E4E600786828 /* TestPhidgetGPSReader.m */; };
+		92347DD91763EBB000786828 /* GPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DD61763EBB000786828 /* GPSReader.m */; };
+		92347DDA1763EBB000786828 /* GPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DD61763EBB000786828 /* GPSReader.m */; };
+		92347DDD1763EDE000786828 /* TestGPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347DDC1763EDE000786828 /* TestGPSReader.m */; };
+		92347DE61764078B00786828 /* LowPassDataFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DE41764078A00786828 /* LowPassDataFilter.c */; };
+		92347DE71764078B00786828 /* LowPassDataFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DE41764078A00786828 /* LowPassDataFilter.c */; };
+		92347DEA17640CAB00786828 /* HighPassDataFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DE817640CAB00786828 /* HighPassDataFilter.c */; };
+		92347DEB17640CAB00786828 /* HighPassDataFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DE817640CAB00786828 /* HighPassDataFilter.c */; };
+		92347DEE1764107100786828 /* CompassBearing.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DEC1764107000786828 /* CompassBearing.c */; };
+		92347DEF1764107100786828 /* CompassBearing.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DEC1764107000786828 /* CompassBearing.c */; };
+		92347DFC1764153F00786828 /* PhidgetSpatialReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DF81764153F00786828 /* PhidgetSpatialReader.c */; };
+		92347DFD1764153F00786828 /* PhidgetSpatialReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DF81764153F00786828 /* PhidgetSpatialReader.c */; };
+		92347DFE1764153F00786828 /* SpatialData.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DFA1764153F00786828 /* SpatialData.c */; };
+		92347DFF1764153F00786828 /* SpatialData.c in Sources */ = {isa = PBXBuildFile; fileRef = 92347DFA1764153F00786828 /* SpatialData.c */; };
+		92347E02176415AA00786828 /* TestPhidgetSpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347E01176415AA00786828 /* TestPhidgetSpatialReader.m */; };
+		92347E051764185B00786828 /* SpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347E041764185B00786828 /* SpatialReader.m */; };
+		92347E061764185B00786828 /* SpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347E041764185B00786828 /* SpatialReader.m */; };
+		92347E0A17641DFB00786828 /* TestSpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347E0917641DFB00786828 /* TestSpatialReader.m */; };
+		9251326717937B2300587300 /* TestTTYReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9251326617937B2300587300 /* TestTTYReader.m */; };
+		9251326D179380B900587300 /* TestGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 9251326C179380B900587300 /* TestGPS.m */; };
+		92513270179380DD00587300 /* TestNMEA183.m in Sources */ = {isa = PBXBuildFile; fileRef = 9251326F179380DD00587300 /* TestNMEA183.m */; };
+		92513273179390F000587300 /* TestGlobalSatBU353GPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92513272179390F000587300 /* TestGlobalSatBU353GPSReader.m */; };
+		929C39A317768A770026A189 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 929C39A217768A760026A189 /* Battery.m */; };
+		929C39A417768A770026A189 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 929C39A217768A760026A189 /* Battery.m */; };
+		929C39A717768E980026A189 /* TestBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 929C39A617768E980026A189 /* TestBattery.m */; };
+		92D6FEA81783A6130023F9D1 /* TestRemoteControlOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D6FEA71783A6130023F9D1 /* TestRemoteControlOperation.m */; };
+		92D6FEAB1783A6200023F9D1 /* RemoteControlOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D6FEAA1783A6200023F9D1 /* RemoteControlOperation.m */; };
+		92D6FEAC1783A6200023F9D1 /* RemoteControlOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D6FEAA1783A6200023F9D1 /* RemoteControlOperation.m */; };
+		92D784D01783C0B9001B442B /* TestRemoteMonitorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D784CF1783C0B9001B442B /* TestRemoteMonitorOperation.m */; };
+		92D784D31783C0C8001B442B /* RemoteMonitorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D784D21783C0C8001B442B /* RemoteMonitorOperation.m */; };
+		92D784D41783C0C8001B442B /* RemoteMonitorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D784D21783C0C8001B442B /* RemoteMonitorOperation.m */; };
+		92DA1ECC17693C380008A573 /* TestVirtualHardwareOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA1ECB17693C380008A573 /* TestVirtualHardwareOperation.m */; };
+		92DAC05817652DAE0006F01A /* TestVirtualSpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC05717652DAE0006F01A /* TestVirtualSpatialReader.m */; };
+		92DAC05B1765314C0006F01A /* TestVirtualMotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC05A1765314C0006F01A /* TestVirtualMotorController.m */; };
+		92DAC05E1765349F0006F01A /* TestVirtualServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC05D1765349F0006F01A /* TestVirtualServoController.m */; };
+		92DAC063176537EE0006F01A /* DroneLoggerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC062176537EE0006F01A /* DroneLoggerOperation.m */; };
+		92DAC064176537EE0006F01A /* DroneLoggerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC062176537EE0006F01A /* DroneLoggerOperation.m */; };
+		92DAC0691765393E0006F01A /* TestDroneLoggerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAC0681765393E0006F01A /* TestDroneLoggerOperation.m */; };
+		92DFF3F817692B72007059B2 /* AutoPilotOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DFF3F717692B72007059B2 /* AutoPilotOperation.m */; };
+		92DFF3F917692B72007059B2 /* AutoPilotOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DFF3F717692B72007059B2 /* AutoPilotOperation.m */; };
+		92DFF3FE17692BE5007059B2 /* TestAutoPilotOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DFF3FD17692BE5007059B2 /* TestAutoPilotOperation.m */; };
+		92E977231764DDEA00975120 /* PhidgetSingleServoController.c in Sources */ = {isa = PBXBuildFile; fileRef = 92E977221764DDEA00975120 /* PhidgetSingleServoController.c */; };
+		92E977241764DDEA00975120 /* PhidgetSingleServoController.c in Sources */ = {isa = PBXBuildFile; fileRef = 92E977221764DDEA00975120 /* PhidgetSingleServoController.c */; };
+		92E977271764DDFD00975120 /* TestPhidgetSingleServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E977261764DDFD00975120 /* TestPhidgetSingleServoController.m */; };
+		92E9772A1764E80B00975120 /* TestServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E977291764E80B00975120 /* TestServoController.m */; };
+		92E9772D1764E8AE00975120 /* ServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9772C1764E8AD00975120 /* ServoController.m */; };
+		92E9772E1764E8AE00975120 /* ServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9772C1764E8AD00975120 /* ServoController.m */; };
+		92E977341764F0E600975120 /* PhidgetSingleDCMotorController.c in Sources */ = {isa = PBXBuildFile; fileRef = 92E977321764F0E600975120 /* PhidgetSingleDCMotorController.c */; };
+		92E977351764F0E600975120 /* PhidgetSingleDCMotorController.c in Sources */ = {isa = PBXBuildFile; fileRef = 92E977321764F0E600975120 /* PhidgetSingleDCMotorController.c */; };
+		92E977381764F39200975120 /* TestPhidgetSingleDCMotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E977371764F39200975120 /* TestPhidgetSingleDCMotorController.m */; };
+		92E9773C1764FB4400975120 /* MotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9773A1764FB4400975120 /* MotorController.m */; };
+		92E9773D1764FB4400975120 /* MotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9773A1764FB4400975120 /* MotorController.m */; };
+		92E977401764FDA800975120 /* TestMotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9773F1764FDA800975120 /* TestMotorController.m */; };
+		92E9774B176511FF00975120 /* VirtualGPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97742176511FF00975120 /* VirtualGPSReader.m */; };
+		92E9774C176511FF00975120 /* VirtualGPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97742176511FF00975120 /* VirtualGPSReader.m */; };
+		92E9774D176511FF00975120 /* VirtualHardwareOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97744176511FF00975120 /* VirtualHardwareOperation.m */; };
+		92E9774E176511FF00975120 /* VirtualHardwareOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97744176511FF00975120 /* VirtualHardwareOperation.m */; };
+		92E9774F176511FF00975120 /* VirtualSpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97746176511FF00975120 /* VirtualSpatialReader.m */; };
+		92E97750176511FF00975120 /* VirtualSpatialReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97746176511FF00975120 /* VirtualSpatialReader.m */; };
+		92E97751176511FF00975120 /* VirtualMotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97748176511FF00975120 /* VirtualMotorController.m */; };
+		92E97752176511FF00975120 /* VirtualMotorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97748176511FF00975120 /* VirtualMotorController.m */; };
+		92E97753176511FF00975120 /* VirtualServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9774A176511FF00975120 /* VirtualServoController.m */; };
+		92E97754176511FF00975120 /* VirtualServoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E9774A176511FF00975120 /* VirtualServoController.m */; };
+		92E977571765131A00975120 /* TestVirtualGPSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E977561765131A00975120 /* TestVirtualGPSReader.m */; };
+		92F146CE176B58B300A0F75A /* TestReliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F146CD176B58B300A0F75A /* TestReliableSocket.m */; };
+		92F146D1176B58F600A0F75A /* ReliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F146D0176B58F600A0F75A /* ReliableSocket.m */; };
+		92F146D2176B58F600A0F75A /* ReliableSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F146D0176B58F600A0F75A /* ReliableSocket.m */; };
+		92F815EB179359D5000C5A57 /* NMEA183.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815EA179359D5000C5A57 /* NMEA183.c */; };
+		92F815EC179359D5000C5A57 /* NMEA183.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815EA179359D5000C5A57 /* NMEA183.c */; };
+		92F815F017935A13000C5A57 /* TTYReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815EF17935A13000C5A57 /* TTYReader.c */; };
+		92F815F117935A13000C5A57 /* TTYReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815EF17935A13000C5A57 /* TTYReader.c */; };
+		92F815F417935A6E000C5A57 /* GlobalSatBU353GPSReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815F317935A6E000C5A57 /* GlobalSatBU353GPSReader.c */; };
+		92F815F517935A6E000C5A57 /* GlobalSatBU353GPSReader.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815F317935A6E000C5A57 /* GlobalSatBU353GPSReader.c */; };
+		92F815FA17935D90000C5A57 /* GPS.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815F917935D90000C5A57 /* GPS.c */; };
+		92F815FB17935D90000C5A57 /* GPS.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F815F917935D90000C5A57 /* GPS.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92347CEE17638EE400786828 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				92347CFB17638EE400786828 /* Drone_Foundation.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		92347D0317638F0400786828 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				92347D0D17638F0400786828 /* Drone_Foundation_Testing.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9200C6C51775F00A005CF03D /* UnreliableSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnreliableSocket.h; sourceTree = "<group>"; };
+		9200C6C61775F00A005CF03D /* UnreliableSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnreliableSocket.m; sourceTree = "<group>"; };
+		9200C6C91775F01A005CF03D /* TestUnreliableSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnreliableSocket.h; sourceTree = "<group>"; };
+		9200C6CA1775F01A005CF03D /* TestUnreliableSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnreliableSocket.m; sourceTree = "<group>"; };
+		9200C6D417760E7C005CF03D /* BatteryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryMonitor.h; sourceTree = "<group>"; };
+		9200C6D517760E7C005CF03D /* BatteryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryMonitor.m; sourceTree = "<group>"; };
+		9200C6D817760E93005CF03D /* VirtualBatteryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualBatteryMonitor.h; sourceTree = "<group>"; };
+		9200C6D917760E93005CF03D /* VirtualBatteryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualBatteryMonitor.m; sourceTree = "<group>"; };
+		9200C6DC17760EB2005CF03D /* TestVirtualBatteryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualBatteryMonitor.h; sourceTree = "<group>"; };
+		9200C6DD17760EB2005CF03D /* TestVirtualBatteryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualBatteryMonitor.m; sourceTree = "<group>"; };
+		9200C6DF17760EC3005CF03D /* TestBatteryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBatteryMonitor.h; sourceTree = "<group>"; };
+		9200C6E017760EC3005CF03D /* TestBatteryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBatteryMonitor.m; sourceTree = "<group>"; };
+		9201E7091794AFF50025F4FD /* DetachedThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetachedThread.h; sourceTree = "<group>"; };
+		9201E70A1794B00C0025F4FD /* DetachedThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DetachedThread.c; sourceTree = "<group>"; };
+		9201E7101794B0B90025F4FD /* TestDetachedThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDetachedThread.h; sourceTree = "<group>"; };
+		9201E7111794B0B90025F4FD /* TestDetachedThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDetachedThread.m; sourceTree = "<group>"; };
+		92347CF017638EE400786828 /* Drone-Foundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Drone-Foundation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92347CF317638EE400786828 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		92347CF917638EE400786828 /* Drone-Foundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drone-Foundation-Prefix.pch"; sourceTree = "<group>"; };
+		92347CFA17638EE400786828 /* Drone_Foundation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Drone_Foundation.1; sourceTree = "<group>"; };
+		92347D0517638F0400786828 /* Drone-Foundation-Testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Drone-Foundation-Testing"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92347D0817638F0400786828 /* TestDroneFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDroneFoundation.m; sourceTree = "<group>"; };
+		92347D0B17638F0400786828 /* Drone-Foundation-Testing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drone-Foundation-Testing-Prefix.pch"; sourceTree = "<group>"; };
+		92347D0C17638F0400786828 /* Drone_Foundation_Testing.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Drone_Foundation_Testing.1; sourceTree = "<group>"; };
+		92347D1117638F4300786828 /* Phidget21.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Phidget21.framework; path = ../../../../../../Library/Frameworks/Phidget21.framework; sourceTree = "<group>"; };
+		92347D191763916E00786828 /* package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
+		92347D1A1763940600786828 /* unpackage+run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "unpackage+run.sh"; sourceTree = "<group>"; };
+		92347D1B1763953500786828 /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; };
+		92347D1C1763971400786828 /* make.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = make.sh; sourceTree = "<group>"; };
+		92347D1F176398E900786828 /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		92347D20176398E900786828 /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		92347D23176398F500786828 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		92347D24176398F600786828 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		92347D271763990900786828 /* NSArray+CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CSV.h"; sourceTree = "<group>"; };
+		92347D281763990900786828 /* NSArray+CSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CSV.m"; sourceTree = "<group>"; };
+		92347D2B176399CC00786828 /* TestNSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestNSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		92347D2C176399CC00786828 /* TestNSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestNSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		92347D2E176399DF00786828 /* TestNSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestNSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		92347D2F176399DF00786828 /* TestNSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestNSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		92347D311763B69700786828 /* TestNSArray+CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestNSArray+CSV.h"; sourceTree = "<group>"; };
+		92347D321763B69700786828 /* TestNSArray+CSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestNSArray+CSV.m"; sourceTree = "<group>"; };
+		92347D8F1763B96A00786828 /* AustralianPostcodes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AustralianPostcodes.csv; sourceTree = "<group>"; };
+		92347D901763B97F00786828 /* DroneLoggerGPSReaderSample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DroneLoggerGPSReaderSample.csv; sourceTree = "<group>"; };
+		92347D911763B98000786828 /* DroneLoggerSample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DroneLoggerSample.csv; sourceTree = "<group>"; };
+		92347D981763D0A500786828 /* GPSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSCoordinate.h; sourceTree = "<group>"; };
+		92347D991763D0A500786828 /* GPSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSCoordinate.m; sourceTree = "<group>"; };
+		92347D9A1763D0A500786828 /* GPSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSFormatter.h; sourceTree = "<group>"; };
+		92347D9B1763D0A500786828 /* GPSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSFormatter.m; sourceTree = "<group>"; };
+		92347D9C1763D0A500786828 /* GPSNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSNavigation.h; sourceTree = "<group>"; };
+		92347D9D1763D0A500786828 /* GPSNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSNavigation.m; sourceTree = "<group>"; };
+		92347DAC1763D11000786828 /* TestLowPassDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLowPassDataFilter.h; sourceTree = "<group>"; };
+		92347DAD1763D11000786828 /* TestLowPassDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLowPassDataFilter.m; sourceTree = "<group>"; };
+		92347DAF1763D32F00786828 /* TestHighPassDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHighPassDataFilter.h; sourceTree = "<group>"; };
+		92347DB01763D32F00786828 /* TestHighPassDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHighPassDataFilter.m; sourceTree = "<group>"; };
+		92347DB21763D4E000786828 /* TestCompassBearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCompassBearing.h; sourceTree = "<group>"; };
+		92347DB31763D4E000786828 /* TestCompassBearing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCompassBearing.m; sourceTree = "<group>"; };
+		92347DB91763D65800786828 /* TestGPSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGPSCoordinate.h; sourceTree = "<group>"; };
+		92347DBA1763D65800786828 /* TestGPSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGPSCoordinate.m; sourceTree = "<group>"; };
+		92347DC01763DB4400786828 /* TestGPSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGPSFormatter.h; sourceTree = "<group>"; };
+		92347DC11763DB4400786828 /* TestGPSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGPSFormatter.m; sourceTree = "<group>"; };
+		92347DC31763DEC500786828 /* TestGPSNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGPSNavigation.h; sourceTree = "<group>"; };
+		92347DC41763DEC500786828 /* TestGPSNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGPSNavigation.m; sourceTree = "<group>"; };
+		92347DCA1763E48300786828 /* PhidgetGPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhidgetGPSReader.h; sourceTree = "<group>"; };
+		92347DCB1763E49100786828 /* PhidgetGPSReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PhidgetGPSReader.c; sourceTree = "<group>"; };
+		92347DD21763E4E600786828 /* TestPhidgetGPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPhidgetGPSReader.h; sourceTree = "<group>"; };
+		92347DD31763E4E600786828 /* TestPhidgetGPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhidgetGPSReader.m; sourceTree = "<group>"; };
+		92347DD51763EBB000786828 /* GPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSReader.h; sourceTree = "<group>"; };
+		92347DD61763EBB000786828 /* GPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSReader.m; sourceTree = "<group>"; };
+		92347DD71763EBB000786828 /* GPSReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSReading.h; sourceTree = "<group>"; };
+		92347DD81763EBB000786828 /* HardwareLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareLogging.h; sourceTree = "<group>"; };
+		92347DDB1763EDE000786828 /* TestGPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGPSReader.h; sourceTree = "<group>"; };
+		92347DDC1763EDE000786828 /* TestGPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGPSReader.m; sourceTree = "<group>"; };
+		92347DE41764078A00786828 /* LowPassDataFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LowPassDataFilter.c; sourceTree = "<group>"; };
+		92347DE51764078A00786828 /* LowPassDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassDataFilter.h; sourceTree = "<group>"; };
+		92347DE817640CAB00786828 /* HighPassDataFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HighPassDataFilter.c; sourceTree = "<group>"; };
+		92347DE917640CAB00786828 /* HighPassDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighPassDataFilter.h; sourceTree = "<group>"; };
+		92347DEC1764107000786828 /* CompassBearing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CompassBearing.c; sourceTree = "<group>"; };
+		92347DED1764107000786828 /* CompassBearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassBearing.h; sourceTree = "<group>"; };
+		92347DF81764153F00786828 /* PhidgetSpatialReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PhidgetSpatialReader.c; sourceTree = "<group>"; };
+		92347DF91764153F00786828 /* PhidgetSpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhidgetSpatialReader.h; sourceTree = "<group>"; };
+		92347DFA1764153F00786828 /* SpatialData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SpatialData.c; sourceTree = "<group>"; };
+		92347DFB1764153F00786828 /* SpatialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpatialData.h; sourceTree = "<group>"; };
+		92347E00176415AA00786828 /* TestPhidgetSpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPhidgetSpatialReader.h; sourceTree = "<group>"; };
+		92347E01176415AA00786828 /* TestPhidgetSpatialReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhidgetSpatialReader.m; sourceTree = "<group>"; };
+		92347E031764185B00786828 /* SpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpatialReader.h; sourceTree = "<group>"; };
+		92347E041764185B00786828 /* SpatialReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpatialReader.m; sourceTree = "<group>"; };
+		92347E071764188B00786828 /* SpatialReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpatialReading.h; sourceTree = "<group>"; };
+		92347E0817641DFB00786828 /* TestSpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSpatialReader.h; sourceTree = "<group>"; };
+		92347E0917641DFB00786828 /* TestSpatialReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSpatialReader.m; sourceTree = "<group>"; };
+		9251326517937B2300587300 /* TestTTYReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTTYReader.h; sourceTree = "<group>"; };
+		9251326617937B2300587300 /* TestTTYReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTTYReader.m; sourceTree = "<group>"; };
+		9251326B179380B900587300 /* TestGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGPS.h; sourceTree = "<group>"; };
+		9251326C179380B900587300 /* TestGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGPS.m; sourceTree = "<group>"; };
+		9251326E179380DD00587300 /* TestNMEA183.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNMEA183.h; sourceTree = "<group>"; };
+		9251326F179380DD00587300 /* TestNMEA183.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNMEA183.m; sourceTree = "<group>"; };
+		92513271179390F000587300 /* TestGlobalSatBU353GPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGlobalSatBU353GPSReader.h; sourceTree = "<group>"; };
+		92513272179390F000587300 /* TestGlobalSatBU353GPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGlobalSatBU353GPSReader.m; sourceTree = "<group>"; };
+		929C39A117768A760026A189 /* Battery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
+		929C39A217768A760026A189 /* Battery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
+		929C39A517768E980026A189 /* TestBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBattery.h; sourceTree = "<group>"; };
+		929C39A617768E980026A189 /* TestBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBattery.m; sourceTree = "<group>"; };
+		92D364BB17976DE0002AD339 /* GPSReceiverData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSReceiverData.h; sourceTree = "<group>"; };
+		92D6FEA61783A6130023F9D1 /* TestRemoteControlOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRemoteControlOperation.h; sourceTree = "<group>"; };
+		92D6FEA71783A6130023F9D1 /* TestRemoteControlOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRemoteControlOperation.m; sourceTree = "<group>"; };
+		92D6FEA91783A6200023F9D1 /* RemoteControlOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControlOperation.h; sourceTree = "<group>"; };
+		92D6FEAA1783A6200023F9D1 /* RemoteControlOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControlOperation.m; sourceTree = "<group>"; };
+		92D784CE1783C0B9001B442B /* TestRemoteMonitorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRemoteMonitorOperation.h; sourceTree = "<group>"; };
+		92D784CF1783C0B9001B442B /* TestRemoteMonitorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRemoteMonitorOperation.m; sourceTree = "<group>"; };
+		92D784D11783C0C8001B442B /* RemoteMonitorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteMonitorOperation.h; sourceTree = "<group>"; };
+		92D784D21783C0C8001B442B /* RemoteMonitorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteMonitorOperation.m; sourceTree = "<group>"; };
+		92DA1ECA17693C380008A573 /* TestVirtualHardwareOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualHardwareOperation.h; sourceTree = "<group>"; };
+		92DA1ECB17693C380008A573 /* TestVirtualHardwareOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualHardwareOperation.m; sourceTree = "<group>"; };
+		92DAC05617652DAE0006F01A /* TestVirtualSpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualSpatialReader.h; sourceTree = "<group>"; };
+		92DAC05717652DAE0006F01A /* TestVirtualSpatialReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualSpatialReader.m; sourceTree = "<group>"; };
+		92DAC0591765314C0006F01A /* TestVirtualMotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualMotorController.h; sourceTree = "<group>"; };
+		92DAC05A1765314C0006F01A /* TestVirtualMotorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualMotorController.m; sourceTree = "<group>"; };
+		92DAC05C1765349F0006F01A /* TestVirtualServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualServoController.h; sourceTree = "<group>"; };
+		92DAC05D1765349F0006F01A /* TestVirtualServoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualServoController.m; sourceTree = "<group>"; };
+		92DAC061176537EE0006F01A /* DroneLoggerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroneLoggerOperation.h; sourceTree = "<group>"; };
+		92DAC062176537EE0006F01A /* DroneLoggerOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroneLoggerOperation.m; sourceTree = "<group>"; };
+		92DAC0671765393E0006F01A /* TestDroneLoggerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDroneLoggerOperation.h; sourceTree = "<group>"; };
+		92DAC0681765393E0006F01A /* TestDroneLoggerOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDroneLoggerOperation.m; sourceTree = "<group>"; };
+		92DC77B5177F9C23007C4AAD /* BatteryMonitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryMonitoring.h; sourceTree = "<group>"; };
+		92DFF3F617692B72007059B2 /* AutoPilotOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoPilotOperation.h; sourceTree = "<group>"; };
+		92DFF3F717692B72007059B2 /* AutoPilotOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoPilotOperation.m; sourceTree = "<group>"; };
+		92DFF3FC17692BE5007059B2 /* TestAutoPilotOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAutoPilotOperation.h; sourceTree = "<group>"; };
+		92DFF3FD17692BE5007059B2 /* TestAutoPilotOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAutoPilotOperation.m; sourceTree = "<group>"; };
+		92E977211764DDDE00975120 /* PhidgetSingleServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhidgetSingleServoController.h; sourceTree = "<group>"; };
+		92E977221764DDEA00975120 /* PhidgetSingleServoController.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PhidgetSingleServoController.c; sourceTree = "<group>"; };
+		92E977251764DDFD00975120 /* TestPhidgetSingleServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPhidgetSingleServoController.h; sourceTree = "<group>"; };
+		92E977261764DDFD00975120 /* TestPhidgetSingleServoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhidgetSingleServoController.m; sourceTree = "<group>"; };
+		92E977281764E80B00975120 /* TestServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestServoController.h; sourceTree = "<group>"; };
+		92E977291764E80B00975120 /* TestServoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestServoController.m; sourceTree = "<group>"; };
+		92E9772B1764E8AD00975120 /* ServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServoController.h; sourceTree = "<group>"; };
+		92E9772C1764E8AD00975120 /* ServoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServoController.m; sourceTree = "<group>"; };
+		92E9772F1764EA4500975120 /* ServoControlling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServoControlling.h; sourceTree = "<group>"; };
+		92E977321764F0E600975120 /* PhidgetSingleDCMotorController.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PhidgetSingleDCMotorController.c; sourceTree = "<group>"; };
+		92E977331764F0E600975120 /* PhidgetSingleDCMotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhidgetSingleDCMotorController.h; sourceTree = "<group>"; };
+		92E977361764F39200975120 /* TestPhidgetSingleDCMotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPhidgetSingleDCMotorController.h; sourceTree = "<group>"; };
+		92E977371764F39200975120 /* TestPhidgetSingleDCMotorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhidgetSingleDCMotorController.m; sourceTree = "<group>"; };
+		92E977391764FB4400975120 /* MotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorController.h; sourceTree = "<group>"; };
+		92E9773A1764FB4400975120 /* MotorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorController.m; sourceTree = "<group>"; };
+		92E9773B1764FB4400975120 /* MotorControlling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorControlling.h; sourceTree = "<group>"; };
+		92E9773E1764FDA800975120 /* TestMotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMotorController.h; sourceTree = "<group>"; };
+		92E9773F1764FDA800975120 /* TestMotorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMotorController.m; sourceTree = "<group>"; };
+		92E97741176511FF00975120 /* VirtualGPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualGPSReader.h; sourceTree = "<group>"; };
+		92E97742176511FF00975120 /* VirtualGPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualGPSReader.m; sourceTree = "<group>"; };
+		92E97743176511FF00975120 /* VirtualHardwareOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualHardwareOperation.h; sourceTree = "<group>"; };
+		92E97744176511FF00975120 /* VirtualHardwareOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualHardwareOperation.m; sourceTree = "<group>"; };
+		92E97745176511FF00975120 /* VirtualSpatialReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualSpatialReader.h; sourceTree = "<group>"; };
+		92E97746176511FF00975120 /* VirtualSpatialReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualSpatialReader.m; sourceTree = "<group>"; };
+		92E97747176511FF00975120 /* VirtualMotorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualMotorController.h; sourceTree = "<group>"; };
+		92E97748176511FF00975120 /* VirtualMotorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualMotorController.m; sourceTree = "<group>"; };
+		92E97749176511FF00975120 /* VirtualServoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualServoController.h; sourceTree = "<group>"; };
+		92E9774A176511FF00975120 /* VirtualServoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualServoController.m; sourceTree = "<group>"; };
+		92E977551765131A00975120 /* TestVirtualGPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVirtualGPSReader.h; sourceTree = "<group>"; };
+		92E977561765131A00975120 /* TestVirtualGPSReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVirtualGPSReader.m; sourceTree = "<group>"; };
+		92F146CC176B58B300A0F75A /* TestReliableSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestReliableSocket.h; sourceTree = "<group>"; };
+		92F146CD176B58B300A0F75A /* TestReliableSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReliableSocket.m; sourceTree = "<group>"; };
+		92F146CF176B58F600A0F75A /* ReliableSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReliableSocket.h; sourceTree = "<group>"; };
+		92F146D0176B58F600A0F75A /* ReliableSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReliableSocket.m; sourceTree = "<group>"; };
+		92F815EA179359D5000C5A57 /* NMEA183.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NMEA183.c; sourceTree = "<group>"; };
+		92F815ED179359E6000C5A57 /* NMEA183.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEA183.h; sourceTree = "<group>"; };
+		92F815EE17935A08000C5A57 /* TTYReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTYReader.h; sourceTree = "<group>"; };
+		92F815EF17935A13000C5A57 /* TTYReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TTYReader.c; sourceTree = "<group>"; };
+		92F815F217935A43000C5A57 /* GlobalSatBU353GPSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSatBU353GPSReader.h; sourceTree = "<group>"; };
+		92F815F317935A6E000C5A57 /* GlobalSatBU353GPSReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GlobalSatBU353GPSReader.c; sourceTree = "<group>"; };
+		92F815F817935D82000C5A57 /* GPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS.h; sourceTree = "<group>"; };
+		92F815F917935D90000C5A57 /* GPS.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GPS.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92347CED17638EE400786828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92347CF417638EE400786828 /* Foundation.framework in Frameworks */,
+				92347D1217638F4300786828 /* Phidget21.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92347D0217638F0400786828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92347D0617638F0400786828 /* Foundation.framework in Frameworks */,
+				92347D1317638F4300786828 /* Phidget21.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9200C6CC17760DDF005CF03D /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				929C39A517768E980026A189 /* TestBattery.h */,
+				929C39A617768E980026A189 /* TestBattery.m */,
+				9200C6DF17760EC3005CF03D /* TestBatteryMonitor.h */,
+				9200C6E017760EC3005CF03D /* TestBatteryMonitor.m */,
+			);
+			name = Battery;
+			sourceTree = "<group>";
+		};
+		9200C6CD17760DF8005CF03D /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				929C39A117768A760026A189 /* Battery.h */,
+				929C39A217768A760026A189 /* Battery.m */,
+				92DC77B5177F9C23007C4AAD /* BatteryMonitoring.h */,
+				9200C6D417760E7C005CF03D /* BatteryMonitor.h */,
+				9200C6D517760E7C005CF03D /* BatteryMonitor.m */,
+			);
+			name = Battery;
+			sourceTree = "<group>";
+		};
+		9200C6CE17760E02005CF03D /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				9200C6D817760E93005CF03D /* VirtualBatteryMonitor.h */,
+				9200C6D917760E93005CF03D /* VirtualBatteryMonitor.m */,
+			);
+			name = Battery;
+			sourceTree = "<group>";
+		};
+		9200C6CF17760E0A005CF03D /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92E97741176511FF00975120 /* VirtualGPSReader.h */,
+				92E97742176511FF00975120 /* VirtualGPSReader.m */,
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		9200C6D017760E16005CF03D /* Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				92E97745176511FF00975120 /* VirtualSpatialReader.h */,
+				92E97746176511FF00975120 /* VirtualSpatialReader.m */,
+			);
+			name = Spatial;
+			sourceTree = "<group>";
+		};
+		9200C6D117760E25005CF03D /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92E97747176511FF00975120 /* VirtualMotorController.h */,
+				92E97748176511FF00975120 /* VirtualMotorController.m */,
+			);
+			name = Motor;
+			sourceTree = "<group>";
+		};
+		9200C6D217760E33005CF03D /* Servo */ = {
+			isa = PBXGroup;
+			children = (
+				92E97749176511FF00975120 /* VirtualServoController.h */,
+				92E9774A176511FF00975120 /* VirtualServoController.m */,
+			);
+			name = Servo;
+			sourceTree = "<group>";
+		};
+		9200C6D317760E43005CF03D /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				92E97743176511FF00975120 /* VirtualHardwareOperation.h */,
+				92E97744176511FF00975120 /* VirtualHardwareOperation.m */,
+			);
+			name = Simulator;
+			sourceTree = "<group>";
+		};
+		9200D8DC176E0DB400978D40 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				92F146CF176B58F600A0F75A /* ReliableSocket.h */,
+				92F146D0176B58F600A0F75A /* ReliableSocket.m */,
+				9200C6C51775F00A005CF03D /* UnreliableSocket.h */,
+				9200C6C61775F00A005CF03D /* UnreliableSocket.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9200D8DD176E0DBF00978D40 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				92F146CC176B58B300A0F75A /* TestReliableSocket.h */,
+				92F146CD176B58B300A0F75A /* TestReliableSocket.m */,
+				9200C6C91775F01A005CF03D /* TestUnreliableSocket.h */,
+				9200C6CA1775F01A005CF03D /* TestUnreliableSocket.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9201E7131794BCBB0025F4FD /* Process & IPC */ = {
+			isa = PBXGroup;
+			children = (
+				9201E7091794AFF50025F4FD /* DetachedThread.h */,
+				9201E70A1794B00C0025F4FD /* DetachedThread.c */,
+			);
+			name = "Process & IPC";
+			sourceTree = "<group>";
+		};
+		9201E7141794BCD20025F4FD /* Process & IPC */ = {
+			isa = PBXGroup;
+			children = (
+				9201E7101794B0B90025F4FD /* TestDetachedThread.h */,
+				9201E7111794B0B90025F4FD /* TestDetachedThread.m */,
+			);
+			name = "Process & IPC";
+			sourceTree = "<group>";
+		};
+		92347CE717638EE400786828 = {
+			isa = PBXGroup;
+			children = (
+				92347CF517638EE400786828 /* Drone-Foundation */,
+				92347D0717638F0400786828 /* Drone-Foundation-Testing */,
+				92347D181763913500786828 /* Scripts & Other */,
+				92347CF217638EE400786828 /* Frameworks */,
+				92347CF117638EE400786828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92347CF117638EE400786828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92347CF017638EE400786828 /* Drone-Foundation */,
+				92347D0517638F0400786828 /* Drone-Foundation-Testing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92347CF217638EE400786828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92347D1117638F4300786828 /* Phidget21.framework */,
+				92347CF317638EE400786828 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92347CF517638EE400786828 /* Drone-Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				92DAC05F176537950006F01A /* Drone-Service */,
+				92347DC61763E43300786828 /* Drone-Core */,
+				92347D1417638FDE00786828 /* Drone-Essential */,
+				92347CF817638EE400786828 /* Supporting Files */,
+			);
+			path = "Drone-Foundation";
+			sourceTree = "<group>";
+		};
+		92347CF817638EE400786828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92347CFA17638EE400786828 /* Drone_Foundation.1 */,
+				92347CF917638EE400786828 /* Drone-Foundation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92347D0717638F0400786828 /* Drone-Foundation-Testing */ = {
+			isa = PBXGroup;
+			children = (
+				92DAC060176537A10006F01A /* Drone-Service */,
+				92347DCE1763E4AC00786828 /* Drone-Core */,
+				92347D1517638FF100786828 /* Drone-Essential */,
+				92347D0817638F0400786828 /* TestDroneFoundation.m */,
+				92347D0A17638F0400786828 /* Supporting Files */,
+			);
+			path = "Drone-Foundation-Testing";
+			sourceTree = "<group>";
+		};
+		92347D0A17638F0400786828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92347D0C17638F0400786828 /* Drone_Foundation_Testing.1 */,
+				92347D901763B97F00786828 /* DroneLoggerGPSReaderSample.csv */,
+				92347D911763B98000786828 /* DroneLoggerSample.csv */,
+				92347D8F1763B96A00786828 /* AustralianPostcodes.csv */,
+				92347D0B17638F0400786828 /* Drone-Foundation-Testing-Prefix.pch */,
+				92347D1B1763953500786828 /* GNUmakefile */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92347D1417638FDE00786828 /* Drone-Essential */ = {
+			isa = PBXGroup;
+			children = (
+				92F146BE176B4F2500A0F75A /* Networking */,
+				92347D951763D07300786828 /* Science */,
+				92347D1D176398A900786828 /* Utility */,
+			);
+			name = "Drone-Essential";
+			sourceTree = "<group>";
+		};
+		92347D1517638FF100786828 /* Drone-Essential */ = {
+			isa = PBXGroup;
+			children = (
+				92F146BD176B4F0E00A0F75A /* Networking */,
+				92347D921763D05C00786828 /* Science */,
+				92347D1E176398C000786828 /* Utility */,
+			);
+			name = "Drone-Essential";
+			sourceTree = "<group>";
+		};
+		92347D181763913500786828 /* Scripts & Other */ = {
+			isa = PBXGroup;
+			children = (
+				92347D191763916E00786828 /* package.sh */,
+				92347D1A1763940600786828 /* unpackage+run.sh */,
+				92347D1C1763971400786828 /* make.sh */,
+			);
+			name = "Scripts & Other";
+			sourceTree = "<group>";
+		};
+		92347D1D176398A900786828 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9201E7131794BCBB0025F4FD /* Process & IPC */,
+				9251326917937B3600587300 /* UNIX */,
+				9251326817937B2D00587300 /* Data Structures */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		92347D1E176398C000786828 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9201E7141794BCD20025F4FD /* Process & IPC */,
+				92F815F717935D3A000C5A57 /* UNIX */,
+				92F815F617935D25000C5A57 /* Data Structre */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		92347D921763D05C00786828 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				92347D941763D06900786828 /* Filtering */,
+				92347D931763D06300786828 /* Navigation */,
+			);
+			name = Science;
+			sourceTree = "<group>";
+		};
+		92347D931763D06300786828 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				92347DB21763D4E000786828 /* TestCompassBearing.h */,
+				92347DB31763D4E000786828 /* TestCompassBearing.m */,
+				9251326B179380B900587300 /* TestGPS.h */,
+				9251326C179380B900587300 /* TestGPS.m */,
+				9251326E179380DD00587300 /* TestNMEA183.h */,
+				9251326F179380DD00587300 /* TestNMEA183.m */,
+				92347DB91763D65800786828 /* TestGPSCoordinate.h */,
+				92347DBA1763D65800786828 /* TestGPSCoordinate.m */,
+				92347DC01763DB4400786828 /* TestGPSFormatter.h */,
+				92347DC11763DB4400786828 /* TestGPSFormatter.m */,
+				92347DC31763DEC500786828 /* TestGPSNavigation.h */,
+				92347DC41763DEC500786828 /* TestGPSNavigation.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		92347D941763D06900786828 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				92347DAC1763D11000786828 /* TestLowPassDataFilter.h */,
+				92347DAD1763D11000786828 /* TestLowPassDataFilter.m */,
+				92347DAF1763D32F00786828 /* TestHighPassDataFilter.h */,
+				92347DB01763D32F00786828 /* TestHighPassDataFilter.m */,
+			);
+			name = Filtering;
+			sourceTree = "<group>";
+		};
+		92347D951763D07300786828 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				92347D971763D08300786828 /* Navigation */,
+				92347D961763D07900786828 /* Filtering */,
+			);
+			name = Science;
+			sourceTree = "<group>";
+		};
+		92347D961763D07900786828 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				92347DE917640CAB00786828 /* HighPassDataFilter.h */,
+				92347DE817640CAB00786828 /* HighPassDataFilter.c */,
+				92347DE51764078A00786828 /* LowPassDataFilter.h */,
+				92347DE41764078A00786828 /* LowPassDataFilter.c */,
+			);
+			name = Filtering;
+			sourceTree = "<group>";
+		};
+		92347D971763D08300786828 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				92F815F817935D82000C5A57 /* GPS.h */,
+				92F815F917935D90000C5A57 /* GPS.c */,
+				92F815ED179359E6000C5A57 /* NMEA183.h */,
+				92F815EA179359D5000C5A57 /* NMEA183.c */,
+				92347DED1764107000786828 /* CompassBearing.h */,
+				92347DEC1764107000786828 /* CompassBearing.c */,
+				92347D981763D0A500786828 /* GPSCoordinate.h */,
+				92347D991763D0A500786828 /* GPSCoordinate.m */,
+				92347D9A1763D0A500786828 /* GPSFormatter.h */,
+				92347D9B1763D0A500786828 /* GPSFormatter.m */,
+				92347D9C1763D0A500786828 /* GPSNavigation.h */,
+				92347D9D1763D0A500786828 /* GPSNavigation.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		92347DC61763E43300786828 /* Drone-Core */ = {
+			isa = PBXGroup;
+			children = (
+				92347DD81763EBB000786828 /* HardwareLogging.h */,
+				92347DC81763E44C00786828 /* Virtual Hardware */,
+				92347DC71763E44400786828 /* Actual Hardware */,
+			);
+			name = "Drone-Core";
+			sourceTree = "<group>";
+		};
+		92347DC71763E44400786828 /* Actual Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				9200C6CD17760DF8005CF03D /* Battery */,
+				92E977301764F0A600975120 /* Motor */,
+				92E977201764DDCC00975120 /* Servo */,
+				92347DDE1764049D00786828 /* Spatial */,
+				92347DC91763E45600786828 /* GPS */,
+			);
+			name = "Actual Hardware";
+			sourceTree = "<group>";
+		};
+		92347DC81763E44C00786828 /* Virtual Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				9200C6D317760E43005CF03D /* Simulator */,
+				9200C6D217760E33005CF03D /* Servo */,
+				9200C6D117760E25005CF03D /* Motor */,
+				9200C6D017760E16005CF03D /* Spatial */,
+				9200C6CF17760E0A005CF03D /* GPS */,
+				9200C6CE17760E02005CF03D /* Battery */,
+			);
+			name = "Virtual Hardware";
+			sourceTree = "<group>";
+		};
+		92347DC91763E45600786828 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92D364BB17976DE0002AD339 /* GPSReceiverData.h */,
+				92F815E517935800000C5A57 /* GlobalSat BU-353 GPS */,
+				92F815E4179357E9000C5A57 /* Phidget GPS */,
+				92347DD51763EBB000786828 /* GPSReader.h */,
+				92347DD61763EBB000786828 /* GPSReader.m */,
+				92347DD71763EBB000786828 /* GPSReading.h */,
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		92347DCE1763E4AC00786828 /* Drone-Core */ = {
+			isa = PBXGroup;
+			children = (
+				92347DD01763E4C000786828 /* Virtual Hardware */,
+				92347DCF1763E4B400786828 /* Actual Hardware */,
+			);
+			name = "Drone-Core";
+			sourceTree = "<group>";
+		};
+		92347DCF1763E4B400786828 /* Actual Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				9200C6CC17760DDF005CF03D /* Battery */,
+				92E977311764F0AF00975120 /* Motor */,
+				92E9771F1764DDC500975120 /* Servo */,
+				92347DDF176404A800786828 /* Spatial */,
+				92347DD11763E4CB00786828 /* GPS */,
+			);
+			name = "Actual Hardware";
+			sourceTree = "<group>";
+		};
+		92347DD01763E4C000786828 /* Virtual Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				92E977551765131A00975120 /* TestVirtualGPSReader.h */,
+				92E977561765131A00975120 /* TestVirtualGPSReader.m */,
+				92DAC05617652DAE0006F01A /* TestVirtualSpatialReader.h */,
+				92DAC05717652DAE0006F01A /* TestVirtualSpatialReader.m */,
+				92DAC0591765314C0006F01A /* TestVirtualMotorController.h */,
+				92DAC05A1765314C0006F01A /* TestVirtualMotorController.m */,
+				92DAC05C1765349F0006F01A /* TestVirtualServoController.h */,
+				92DAC05D1765349F0006F01A /* TestVirtualServoController.m */,
+				92DA1ECA17693C380008A573 /* TestVirtualHardwareOperation.h */,
+				92DA1ECB17693C380008A573 /* TestVirtualHardwareOperation.m */,
+				9200C6DC17760EB2005CF03D /* TestVirtualBatteryMonitor.h */,
+				9200C6DD17760EB2005CF03D /* TestVirtualBatteryMonitor.m */,
+			);
+			name = "Virtual Hardware";
+			sourceTree = "<group>";
+		};
+		92347DD11763E4CB00786828 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92F815FD17936AB0000C5A57 /* GlobalSat BU-353 GPS */,
+				92F815FC17936A93000C5A57 /* Phidget GPS */,
+				92347DDB1763EDE000786828 /* TestGPSReader.h */,
+				92347DDC1763EDE000786828 /* TestGPSReader.m */,
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		92347DDE1764049D00786828 /* Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				92F815E617935879000C5A57 /* Phidget Spatial */,
+				92347E071764188B00786828 /* SpatialReading.h */,
+				92347E031764185B00786828 /* SpatialReader.h */,
+				92347E041764185B00786828 /* SpatialReader.m */,
+			);
+			name = Spatial;
+			sourceTree = "<group>";
+		};
+		92347DDF176404A800786828 /* Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				92F815FE17936AC3000C5A57 /* Phidget Spatial */,
+				92347E0817641DFB00786828 /* TestSpatialReader.h */,
+				92347E0917641DFB00786828 /* TestSpatialReader.m */,
+			);
+			name = Spatial;
+			sourceTree = "<group>";
+		};
+		9251326817937B2D00587300 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				92347D1F176398E900786828 /* NSMutableArray+Queue.h */,
+				92347D20176398E900786828 /* NSMutableArray+Queue.m */,
+				92347D23176398F500786828 /* NSMutableArray+Stack.h */,
+				92347D24176398F600786828 /* NSMutableArray+Stack.m */,
+				92347D271763990900786828 /* NSArray+CSV.h */,
+				92347D281763990900786828 /* NSArray+CSV.m */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		9251326917937B3600587300 /* UNIX */ = {
+			isa = PBXGroup;
+			children = (
+				92F815EE17935A08000C5A57 /* TTYReader.h */,
+				92F815EF17935A13000C5A57 /* TTYReader.c */,
+			);
+			name = UNIX;
+			sourceTree = "<group>";
+		};
+		92DAC05F176537950006F01A /* Drone-Service */ = {
+			isa = PBXGroup;
+			children = (
+				92F1A37C176A983F00E9C21D /* Networking */,
+				92DFF3FB17692BAD007059B2 /* AutoPilot */,
+				92DAC066176539200006F01A /* Logging */,
+			);
+			name = "Drone-Service";
+			sourceTree = "<group>";
+		};
+		92DAC060176537A10006F01A /* Drone-Service */ = {
+			isa = PBXGroup;
+			children = (
+				92F1A37D176A985900E9C21D /* Networking */,
+				92DFF3FA17692B9E007059B2 /* AutoPilot */,
+				92DAC065176539080006F01A /* Logging */,
+			);
+			name = "Drone-Service";
+			sourceTree = "<group>";
+		};
+		92DAC065176539080006F01A /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				92DAC0671765393E0006F01A /* TestDroneLoggerOperation.h */,
+				92DAC0681765393E0006F01A /* TestDroneLoggerOperation.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		92DAC066176539200006F01A /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				92DAC061176537EE0006F01A /* DroneLoggerOperation.h */,
+				92DAC062176537EE0006F01A /* DroneLoggerOperation.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		92DFF3FA17692B9E007059B2 /* AutoPilot */ = {
+			isa = PBXGroup;
+			children = (
+				92DFF3FC17692BE5007059B2 /* TestAutoPilotOperation.h */,
+				92DFF3FD17692BE5007059B2 /* TestAutoPilotOperation.m */,
+			);
+			name = AutoPilot;
+			sourceTree = "<group>";
+		};
+		92DFF3FB17692BAD007059B2 /* AutoPilot */ = {
+			isa = PBXGroup;
+			children = (
+				92DFF3F617692B72007059B2 /* AutoPilotOperation.h */,
+				92DFF3F717692B72007059B2 /* AutoPilotOperation.m */,
+			);
+			name = AutoPilot;
+			sourceTree = "<group>";
+		};
+		92E9771F1764DDC500975120 /* Servo */ = {
+			isa = PBXGroup;
+			children = (
+				92F815FF17936AE0000C5A57 /* PhidgetAdvancedServo 1-Motor */,
+				92E977281764E80B00975120 /* TestServoController.h */,
+				92E977291764E80B00975120 /* TestServoController.m */,
+			);
+			name = Servo;
+			sourceTree = "<group>";
+		};
+		92E977201764DDCC00975120 /* Servo */ = {
+			isa = PBXGroup;
+			children = (
+				92F815E817935911000C5A57 /* PhidgetAdvancedServo 1-Motor */,
+				92E9772F1764EA4500975120 /* ServoControlling.h */,
+				92E9772B1764E8AD00975120 /* ServoController.h */,
+				92E9772C1764E8AD00975120 /* ServoController.m */,
+			);
+			name = Servo;
+			sourceTree = "<group>";
+		};
+		92E977301764F0A600975120 /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92F815E7179358F2000C5A57 /* PhidgetMotorControl 1-Motor */,
+				92E9773B1764FB4400975120 /* MotorControlling.h */,
+				92E977391764FB4400975120 /* MotorController.h */,
+				92E9773A1764FB4400975120 /* MotorController.m */,
+			);
+			name = Motor;
+			sourceTree = "<group>";
+		};
+		92E977311764F0AF00975120 /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92F8160017936B06000C5A57 /* PhidgetMotorControl 1-Motor */,
+				92E9773E1764FDA800975120 /* TestMotorController.h */,
+				92E9773F1764FDA800975120 /* TestMotorController.m */,
+			);
+			name = Motor;
+			sourceTree = "<group>";
+		};
+		92F146BD176B4F0E00A0F75A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9200D8DD176E0DBF00978D40 /* Common */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		92F146BE176B4F2500A0F75A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9200D8DC176E0DB400978D40 /* Common */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		92F1A37C176A983F00E9C21D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				92D6FEA91783A6200023F9D1 /* RemoteControlOperation.h */,
+				92D6FEAA1783A6200023F9D1 /* RemoteControlOperation.m */,
+				92D784D11783C0C8001B442B /* RemoteMonitorOperation.h */,
+				92D784D21783C0C8001B442B /* RemoteMonitorOperation.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		92F1A37D176A985900E9C21D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				92D6FEA61783A6130023F9D1 /* TestRemoteControlOperation.h */,
+				92D6FEA71783A6130023F9D1 /* TestRemoteControlOperation.m */,
+				92D784CE1783C0B9001B442B /* TestRemoteMonitorOperation.h */,
+				92D784CF1783C0B9001B442B /* TestRemoteMonitorOperation.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		92F815E4179357E9000C5A57 /* Phidget GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92347DCA1763E48300786828 /* PhidgetGPSReader.h */,
+				92347DCB1763E49100786828 /* PhidgetGPSReader.c */,
+			);
+			name = "Phidget GPS";
+			sourceTree = "<group>";
+		};
+		92F815E517935800000C5A57 /* GlobalSat BU-353 GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92F815F217935A43000C5A57 /* GlobalSatBU353GPSReader.h */,
+				92F815F317935A6E000C5A57 /* GlobalSatBU353GPSReader.c */,
+			);
+			name = "GlobalSat BU-353 GPS";
+			sourceTree = "<group>";
+		};
+		92F815E617935879000C5A57 /* Phidget Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				92347DFB1764153F00786828 /* SpatialData.h */,
+				92347DFA1764153F00786828 /* SpatialData.c */,
+				92347DF91764153F00786828 /* PhidgetSpatialReader.h */,
+				92347DF81764153F00786828 /* PhidgetSpatialReader.c */,
+			);
+			name = "Phidget Spatial";
+			sourceTree = "<group>";
+		};
+		92F815E7179358F2000C5A57 /* PhidgetMotorControl 1-Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92E977331764F0E600975120 /* PhidgetSingleDCMotorController.h */,
+				92E977321764F0E600975120 /* PhidgetSingleDCMotorController.c */,
+			);
+			name = "PhidgetMotorControl 1-Motor";
+			sourceTree = "<group>";
+		};
+		92F815E817935911000C5A57 /* PhidgetAdvancedServo 1-Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92E977211764DDDE00975120 /* PhidgetSingleServoController.h */,
+				92E977221764DDEA00975120 /* PhidgetSingleServoController.c */,
+			);
+			name = "PhidgetAdvancedServo 1-Motor";
+			sourceTree = "<group>";
+		};
+		92F815F617935D25000C5A57 /* Data Structre */ = {
+			isa = PBXGroup;
+			children = (
+				92347D2B176399CC00786828 /* TestNSMutableArray+Queue.h */,
+				92347D2C176399CC00786828 /* TestNSMutableArray+Queue.m */,
+				92347D2E176399DF00786828 /* TestNSMutableArray+Stack.h */,
+				92347D2F176399DF00786828 /* TestNSMutableArray+Stack.m */,
+				92347D311763B69700786828 /* TestNSArray+CSV.h */,
+				92347D321763B69700786828 /* TestNSArray+CSV.m */,
+			);
+			name = "Data Structre";
+			sourceTree = "<group>";
+		};
+		92F815F717935D3A000C5A57 /* UNIX */ = {
+			isa = PBXGroup;
+			children = (
+				9251326517937B2300587300 /* TestTTYReader.h */,
+				9251326617937B2300587300 /* TestTTYReader.m */,
+			);
+			name = UNIX;
+			sourceTree = "<group>";
+		};
+		92F815FC17936A93000C5A57 /* Phidget GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92347DD21763E4E600786828 /* TestPhidgetGPSReader.h */,
+				92347DD31763E4E600786828 /* TestPhidgetGPSReader.m */,
+			);
+			name = "Phidget GPS";
+			sourceTree = "<group>";
+		};
+		92F815FD17936AB0000C5A57 /* GlobalSat BU-353 GPS */ = {
+			isa = PBXGroup;
+			children = (
+				92513271179390F000587300 /* TestGlobalSatBU353GPSReader.h */,
+				92513272179390F000587300 /* TestGlobalSatBU353GPSReader.m */,
+			);
+			name = "GlobalSat BU-353 GPS";
+			sourceTree = "<group>";
+		};
+		92F815FE17936AC3000C5A57 /* Phidget Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				92347E00176415AA00786828 /* TestPhidgetSpatialReader.h */,
+				92347E01176415AA00786828 /* TestPhidgetSpatialReader.m */,
+			);
+			name = "Phidget Spatial";
+			sourceTree = "<group>";
+		};
+		92F815FF17936AE0000C5A57 /* PhidgetAdvancedServo 1-Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92E977251764DDFD00975120 /* TestPhidgetSingleServoController.h */,
+				92E977261764DDFD00975120 /* TestPhidgetSingleServoController.m */,
+			);
+			name = "PhidgetAdvancedServo 1-Motor";
+			sourceTree = "<group>";
+		};
+		92F8160017936B06000C5A57 /* PhidgetMotorControl 1-Motor */ = {
+			isa = PBXGroup;
+			children = (
+				92E977361764F39200975120 /* TestPhidgetSingleDCMotorController.h */,
+				92E977371764F39200975120 /* TestPhidgetSingleDCMotorController.m */,
+			);
+			name = "PhidgetMotorControl 1-Motor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92347CEF17638EE400786828 /* Drone-Foundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92347CFE17638EE400786828 /* Build configuration list for PBXNativeTarget "Drone-Foundation" */;
+			buildPhases = (
+				92347CEC17638EE400786828 /* Sources */,
+				92347CED17638EE400786828 /* Frameworks */,
+				92347CEE17638EE400786828 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drone-Foundation";
+			productName = "Drone-Foundation";
+			productReference = 92347CF017638EE400786828 /* Drone-Foundation */;
+			productType = "com.apple.product-type.tool";
+		};
+		92347D0417638F0400786828 /* Drone-Foundation-Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92347D0E17638F0400786828 /* Build configuration list for PBXNativeTarget "Drone-Foundation-Testing" */;
+			buildPhases = (
+				92347D0117638F0400786828 /* Sources */,
+				92347D0217638F0400786828 /* Frameworks */,
+				92347D0317638F0400786828 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drone-Foundation-Testing";
+			productName = "Drone-Foundation-Testing";
+			productReference = 92347D0517638F0400786828 /* Drone-Foundation-Testing */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92347CE817638EE400786828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bartlomiej Mika";
+			};
+			buildConfigurationList = 92347CEB17638EE400786828 /* Build configuration list for PBXProject "Drone-Foundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92347CE717638EE400786828;
+			productRefGroup = 92347CF117638EE400786828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92347CEF17638EE400786828 /* Drone-Foundation */,
+				92347D0417638F0400786828 /* Drone-Foundation-Testing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92347CEC17638EE400786828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92347D21176398E900786828 /* NSMutableArray+Queue.m in Sources */,
+				92347D25176398F600786828 /* NSMutableArray+Stack.m in Sources */,
+				92347D291763990900786828 /* NSArray+CSV.m in Sources */,
+				92347D9E1763D0A500786828 /* GPSCoordinate.m in Sources */,
+				92347DA01763D0A500786828 /* GPSFormatter.m in Sources */,
+				92347DA21763D0A500786828 /* GPSNavigation.m in Sources */,
+				92347DCC1763E49100786828 /* PhidgetGPSReader.c in Sources */,
+				92347DD91763EBB000786828 /* GPSReader.m in Sources */,
+				92347DE61764078B00786828 /* LowPassDataFilter.c in Sources */,
+				92347DEA17640CAB00786828 /* HighPassDataFilter.c in Sources */,
+				92347DEE1764107100786828 /* CompassBearing.c in Sources */,
+				92347DFC1764153F00786828 /* PhidgetSpatialReader.c in Sources */,
+				92347DFE1764153F00786828 /* SpatialData.c in Sources */,
+				92347E051764185B00786828 /* SpatialReader.m in Sources */,
+				92E977231764DDEA00975120 /* PhidgetSingleServoController.c in Sources */,
+				92E9772D1764E8AE00975120 /* ServoController.m in Sources */,
+				92E977341764F0E600975120 /* PhidgetSingleDCMotorController.c in Sources */,
+				92E9773C1764FB4400975120 /* MotorController.m in Sources */,
+				92E9774B176511FF00975120 /* VirtualGPSReader.m in Sources */,
+				92E9774D176511FF00975120 /* VirtualHardwareOperation.m in Sources */,
+				92E9774F176511FF00975120 /* VirtualSpatialReader.m in Sources */,
+				92E97751176511FF00975120 /* VirtualMotorController.m in Sources */,
+				92E97753176511FF00975120 /* VirtualServoController.m in Sources */,
+				92DAC063176537EE0006F01A /* DroneLoggerOperation.m in Sources */,
+				92DFF3F817692B72007059B2 /* AutoPilotOperation.m in Sources */,
+				92F146D1176B58F600A0F75A /* ReliableSocket.m in Sources */,
+				9200C6C71775F00A005CF03D /* UnreliableSocket.m in Sources */,
+				9200C6D617760E7C005CF03D /* BatteryMonitor.m in Sources */,
+				9200C6DA17760E93005CF03D /* VirtualBatteryMonitor.m in Sources */,
+				929C39A317768A770026A189 /* Battery.m in Sources */,
+				92D6FEAB1783A6200023F9D1 /* RemoteControlOperation.m in Sources */,
+				92D784D31783C0C8001B442B /* RemoteMonitorOperation.m in Sources */,
+				92F815EB179359D5000C5A57 /* NMEA183.c in Sources */,
+				92F815F017935A13000C5A57 /* TTYReader.c in Sources */,
+				92F815F417935A6E000C5A57 /* GlobalSatBU353GPSReader.c in Sources */,
+				92F815FA17935D90000C5A57 /* GPS.c in Sources */,
+				9201E70B1794B00C0025F4FD /* DetachedThread.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92347D0117638F0400786828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92347D0917638F0400786828 /* TestDroneFoundation.m in Sources */,
+				92347D22176398E900786828 /* NSMutableArray+Queue.m in Sources */,
+				92347D26176398F600786828 /* NSMutableArray+Stack.m in Sources */,
+				92347D2A1763990900786828 /* NSArray+CSV.m in Sources */,
+				92347D2D176399CC00786828 /* TestNSMutableArray+Queue.m in Sources */,
+				92347D30176399DF00786828 /* TestNSMutableArray+Stack.m in Sources */,
+				92347D331763B69700786828 /* TestNSArray+CSV.m in Sources */,
+				92347D9F1763D0A500786828 /* GPSCoordinate.m in Sources */,
+				92347DA11763D0A500786828 /* GPSFormatter.m in Sources */,
+				92347DA31763D0A500786828 /* GPSNavigation.m in Sources */,
+				92347DAE1763D11000786828 /* TestLowPassDataFilter.m in Sources */,
+				92347DB11763D32F00786828 /* TestHighPassDataFilter.m in Sources */,
+				92347DB41763D4E000786828 /* TestCompassBearing.m in Sources */,
+				92347DBB1763D65800786828 /* TestGPSCoordinate.m in Sources */,
+				92347DC21763DB4400786828 /* TestGPSFormatter.m in Sources */,
+				92347DC51763DEC500786828 /* TestGPSNavigation.m in Sources */,
+				92347DCD1763E49100786828 /* PhidgetGPSReader.c in Sources */,
+				92347DD41763E4E600786828 /* TestPhidgetGPSReader.m in Sources */,
+				92347DDA1763EBB000786828 /* GPSReader.m in Sources */,
+				92347DDD1763EDE000786828 /* TestGPSReader.m in Sources */,
+				92347DE71764078B00786828 /* LowPassDataFilter.c in Sources */,
+				92347DEB17640CAB00786828 /* HighPassDataFilter.c in Sources */,
+				92347DEF1764107100786828 /* CompassBearing.c in Sources */,
+				92347DFD1764153F00786828 /* PhidgetSpatialReader.c in Sources */,
+				92347DFF1764153F00786828 /* SpatialData.c in Sources */,
+				92347E02176415AA00786828 /* TestPhidgetSpatialReader.m in Sources */,
+				92347E061764185B00786828 /* SpatialReader.m in Sources */,
+				92347E0A17641DFB00786828 /* TestSpatialReader.m in Sources */,
+				92E977241764DDEA00975120 /* PhidgetSingleServoController.c in Sources */,
+				92E977271764DDFD00975120 /* TestPhidgetSingleServoController.m in Sources */,
+				92E9772A1764E80B00975120 /* TestServoController.m in Sources */,
+				92E9772E1764E8AE00975120 /* ServoController.m in Sources */,
+				92E977351764F0E600975120 /* PhidgetSingleDCMotorController.c in Sources */,
+				92E977381764F39200975120 /* TestPhidgetSingleDCMotorController.m in Sources */,
+				92E9773D1764FB4400975120 /* MotorController.m in Sources */,
+				92E977401764FDA800975120 /* TestMotorController.m in Sources */,
+				92E9774C176511FF00975120 /* VirtualGPSReader.m in Sources */,
+				92E9774E176511FF00975120 /* VirtualHardwareOperation.m in Sources */,
+				92E97750176511FF00975120 /* VirtualSpatialReader.m in Sources */,
+				92E97752176511FF00975120 /* VirtualMotorController.m in Sources */,
+				92E97754176511FF00975120 /* VirtualServoController.m in Sources */,
+				92E977571765131A00975120 /* TestVirtualGPSReader.m in Sources */,
+				92DAC05817652DAE0006F01A /* TestVirtualSpatialReader.m in Sources */,
+				92DAC05B1765314C0006F01A /* TestVirtualMotorController.m in Sources */,
+				92DAC05E1765349F0006F01A /* TestVirtualServoController.m in Sources */,
+				92DAC064176537EE0006F01A /* DroneLoggerOperation.m in Sources */,
+				92DAC0691765393E0006F01A /* TestDroneLoggerOperation.m in Sources */,
+				92DFF3F917692B72007059B2 /* AutoPilotOperation.m in Sources */,
+				92DFF3FE17692BE5007059B2 /* TestAutoPilotOperation.m in Sources */,
+				92DA1ECC17693C380008A573 /* TestVirtualHardwareOperation.m in Sources */,
+				92F146CE176B58B300A0F75A /* TestReliableSocket.m in Sources */,
+				92F146D2176B58F600A0F75A /* ReliableSocket.m in Sources */,
+				9200C6C81775F00A005CF03D /* UnreliableSocket.m in Sources */,
+				9200C6CB1775F01A005CF03D /* TestUnreliableSocket.m in Sources */,
+				9200C6D717760E7C005CF03D /* BatteryMonitor.m in Sources */,
+				9200C6DB17760E93005CF03D /* VirtualBatteryMonitor.m in Sources */,
+				9200C6DE17760EB2005CF03D /* TestVirtualBatteryMonitor.m in Sources */,
+				9200C6E117760EC3005CF03D /* TestBatteryMonitor.m in Sources */,
+				929C39A417768A770026A189 /* Battery.m in Sources */,
+				929C39A717768E980026A189 /* TestBattery.m in Sources */,
+				92D6FEA81783A6130023F9D1 /* TestRemoteControlOperation.m in Sources */,
+				92D6FEAC1783A6200023F9D1 /* RemoteControlOperation.m in Sources */,
+				92D784D01783C0B9001B442B /* TestRemoteMonitorOperation.m in Sources */,
+				92D784D41783C0C8001B442B /* RemoteMonitorOperation.m in Sources */,
+				92F815EC179359D5000C5A57 /* NMEA183.c in Sources */,
+				92F815F117935A13000C5A57 /* TTYReader.c in Sources */,
+				92F815F517935A6E000C5A57 /* GlobalSatBU353GPSReader.c in Sources */,
+				92F815FB17935D90000C5A57 /* GPS.c in Sources */,
+				9251326717937B2300587300 /* TestTTYReader.m in Sources */,
+				9251326D179380B900587300 /* TestGPS.m in Sources */,
+				92513270179380DD00587300 /* TestNMEA183.m in Sources */,
+				92513273179390F000587300 /* TestGlobalSatBU353GPSReader.m in Sources */,
+				9201E70C1794B00C0025F4FD /* DetachedThread.c in Sources */,
+				9201E7121794B0B90025F4FD /* TestDetachedThread.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		92347CFC17638EE400786828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		92347CFD17638EE400786828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		92347CFF17638EE400786828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drone-Foundation/Drone-Foundation-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92347D0017638EE400786828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drone-Foundation/Drone-Foundation-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		92347D0F17638F0400786828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drone-Foundation-Testing/Drone-Foundation-Testing-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92347D1017638F0400786828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drone-Foundation-Testing/Drone-Foundation-Testing-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92347CEB17638EE400786828 /* Build configuration list for PBXProject "Drone-Foundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92347CFC17638EE400786828 /* Debug */,
+				92347CFD17638EE400786828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92347CFE17638EE400786828 /* Build configuration list for PBXNativeTarget "Drone-Foundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92347CFF17638EE400786828 /* Debug */,
+				92347D0017638EE400786828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92347D0E17638F0400786828 /* Build configuration list for PBXNativeTarget "Drone-Foundation-Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92347D0F17638F0400786828 /* Debug */,
+				92347D1017638F0400786828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92347CE817638EE400786828 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Drone-Command-Testing' target in the 'Drone-Command-Testing' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

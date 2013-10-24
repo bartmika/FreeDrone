@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww28700\viewh11800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs52 \cf0 \ul \ulc0 FreeBSD
+\b0\fs44 \ulnone \
+(Your Robot Computer)\
+1) Go to ports and install "libusb" driver\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf0 # cd /usr/ports/devel/libusb\
+# make install clean
+\f0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs54 \cf0 Apple Macintosh Computer
+\b0\fs44 \
+i) Go to http://www.phidgets.com/docs/OS_-_Linux\
+ii) Download "Phidget Libraries" tar and unzip in your ~/Downloads folder.\
+iii) SCP the library to your machine.\
+\pard\pardeftab720
+
+\f1\fs48 \cf0 # scp ~/Downloads/libphidget_2.1.8.20130320.tar admin@192.168.0.14:/tmp
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b\fs52 \cf0 \ul FreeBSD\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\b0\fs42 \cf0 \ulnone # cd /tmp\
+\pard\pardeftab720
+\cf0 tar -zxvf libphidget_2.1.8.20130320.tar\
+\
+Note:\
+z -- unzip\
+x -- extract the file\
+v -- verbose\
+f -- forcefully done\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+# cd ./libphidget-2.1.8.20130320\
+# ./configure\
+# make\
+# make install\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs44 \cf0 \
+4) Confirm everything is working.\
+i) Create a file called "HelloWorld.c" with the following contents:\
+ii) Copy "HelloWord.c" contents from our desktop into that file.\
+iii) Run:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf0 # gcc HelloWorld.c -o HelloWorld -lphidget21\
+# ./HelloWorld
+\f0 \
+\
+5) Trouble?\
+
+\f1 http://www.phidgets.com/docs/OS_-_Linux
+\f0 \
+}

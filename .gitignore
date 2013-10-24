@@ -1,0 +1,24 @@
+.DS_Store
+
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+
+# Xcode 4
+xcuserdata/
+project.xcworkspace/
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+
+# cocos2d
+PLBlocks.framework/*
+*.pyc 
+
+# Source: https://github.com/haqu/tweejump/blob/master/.gitignore

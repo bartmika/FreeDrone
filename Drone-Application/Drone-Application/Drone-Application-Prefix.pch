@@ -1,0 +1,38 @@
+//
+// Prefix header for all source files of the 'Drone-Application' target in the 'Drone-Application' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "LowPassDataFilter.h"
+    #import "HighPassDataFilter.h"
+    #import "CompassBearing.h"
+    #import "SpatialData.h"
+    #import "PhidgetSpatialReader.h"
+    #import "PhidgetGPSReader.h"
+    #import "PhidgetSingleServoController.h"
+    #import "PhidgetSingleDCMotorController.h"
+    #import "NSMutableArray+Stack.h"
+    #import "NSMutableArray+Queue.h"
+    #import "NSArray+CSV.h"
+    #import "GPSFormatter.h"
+    #import "GPSCoordinate.h"
+    #import "GPSNavigation.h"
+    #import "GPSReader.h"
+    #import "SpatialReader.h"
+    #import "ServoController.h"
+    #import "MotorController.h"
+    #import "Battery.h"
+    #import "BatteryMonitor.h"
+    #import "DroneLoggerOperation.h"
+    #import "AutoPilotOperation.h"
+    #import "ReliableSocket.h"
+    #import "RemoteControlOperation.h"
+    #import "RemoteMonitorOperation.h"
+    #import "DroneController.h"
+    #import "GPS.h"
+    #import "NMEA183.h"
+    #import "TTYReader.h"
+    #import "GlobalSatBU353GPSReader.h"
+    #import "DetachedThread.h"
+#endif

@@ -1,0 +1,90 @@
+"FreeDrone" Version 0.5 - Oct/24/2013
+
+DESCRIPTION
+-----------
+- FreeDrone is suite of tools & libraries used to operate a unmanned surface 
+  vehicle (USV). Project is written in C/Objective-C which leverages the open
+  source GNUStep Framework
+
+- The goal of the FreeDrone project is to develop core libraries which can be 
+  used for operating an USV, which therefore can be used in an drone autopilot
+  application and remote control ‘command’ application
+
+- Currently experimental project
+
+CORE
+-----
+- Main drone framework which encapsulates all drone system/hardware operation.
+
+- All hardware interactions are abstracted through a 'hardware abstraction
+  layer' (HAL)
+  
+- Utilize OOP design
+
+- Currently beta
+
+APP
+-----
+- Application used to run a drone instance on a raspberry pi computer.
+- Currently prototype
+
+COMMAND
+-------
+- Application used to run a command server on a Apple computer.
+- Currently prototype
+
+REQUIRED HARDWARE / OS
+----------------------
+- Mactionsh Apple Computer (OSX)
+- Raspberry Pi (Raspbian)
+- Phidget Spatial Precision 3/3/3 High Resolution (1044_0)
+- Phidget Motor Control 1-Motor (1065_0)
+- Phidget Advanced Servo 1-Motor (1066_0)
+- Phidget USB Isolator (3060_0)
+- Hitec HS-645MG Super Torque Servo (3204_0)
+- 24V/173.3Kg-cm/15RPM 168:1 DC Gear Moto (3274_0)
+- Power USE Hub
+- WIFI Receiver
+- GlobalSat BU 353 GPS Receive
+
+INSTALLATION
+------------
+
+1) Please go to the following directory:
+./Drone-Documentation
+
+2) Read the following documents and follow the instructions
+    Mac+Bu353
+    Mac+Phidgets
+    RPI+GNUStep+Phidgets
+    RPI+Phidgets
+    RPi+Wifi
+    Mac+Phidgets+FreeBSD
+
+3) Run an instance of the Drone application on the Raspbery PI, please follow
+   the following set of steps:
+   
+   //TODO: Fill in!
+
+RUN-TIME
+--------
+    1) Turn on Raspberry Pi
+    2) SSH into Raspberry Pi
+    3) Navigate to the following directory:
+        //TODO: Fill in
+    4) Run the following command
+        //TODO: Fill in
+    5) On your Mac, open the "Command" project
+    6) Run it
+    7) The drone application and the command console should be working.
+
+CONTACT
+-------
+skype: bartlomiej.mika
+email: bartlomiej.mika@gmail.com
+twitter: @eurasiasoft
+
+LICENSE
+--------
+FreeBSD 
+(See "LICENSE" file)

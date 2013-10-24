@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red191\green81\blue16;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww21520\viewh14460\viewkind0
+\deftab720
+\pard\pardeftab720\sa220
+
+\f0\b\fs22 \cf2 Date: Wednesday, January 9, 2013\
+Source: http://www.dafinga.net/2013/01/how-to-setup-raspberry-pi-with-hidden.html\cf0 \
+\pard\pardeftab720
+
+\b0\fs44 \cf2 How to setup a Raspberry Pi with a hidden network using a Edimax EW-7811Un\
+\pard\pardeftab720
+
+\fs22 \cf2 \
+\pard\pardeftab720
+
+\fs26 \cf2 If you are looking for a wireless adapter for the {\field{\*\fldinst{HYPERLINK "http://www.raspberrypi.org/"}}{\fldrslt \cf3 Raspberry Pi}}, the {\field{\*\fldinst{HYPERLINK "http://www.amazon.com/gp/product/B005CLMJLU/ref=oh_details_o01_s00_i00"}}{\fldrslt \cf3 Edimax EW-7811Un}} is reasonably priced at $12.99 ($9.99 w/ Amazon Prime) and is supported with {\field{\*\fldinst{HYPERLINK "http://www.raspberrypi.org/downloads"}}{\fldrslt \cf3 Raspbian "wheezy" 3.2.27+}}\'a0kernel. \'a0There were driver issues with earlier versions of Raspbian, but luckily you won't have to worry about installing drivers with any Raspbian image dated 2012-12-06 or older.\
+\
+After you install Raspbian to a SD card (OSX command: 
+\f1 sudo dd if=~/2012-12-16-wheezy-raspbian.img of=/dev/disk1 bs=1m
+\f0 ), boot up the Raspberry Pi and perform the following:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa60
+\ls1\ilvl0\cf2 {\listtext	1.	}Launch a repository update\uc0\u8232 
+\f1 $ sudo apt-get update
+\f0 \
+{\listtext	2.	}Run a system upgrade\uc0\u8232 
+\f1 $ sudo apt-get upgrade
+\f0 \
+{\listtext	3.	}Make sure that the latest Raspberry Pi firmware version is installed\uc0\u8232 
+\f1 $ sudo apt-get install raspberrypi-bootloader
+\f0 \
+{\listtext	4.	}Install the wpa_supplicant utility\uc0\u8232 
+\f1 $ apt-get install wpasupplicant
+\f0 \
+\pard\pardeftab720
+
+\b \cf2 WLAN setup and configuration for a \ul hidden\ulnone  SSID wifi network
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa60
+\ls2\ilvl0\cf2 {\listtext	1.	}Generate a PSK version of your WLAN password with wpa_passphrase utility\uc0\u8232 
+\f1 $ wpa_passphrase\'a0<Your Wifi SSID>\'a0<Your Wifi PASSWORD>
+\f0 \
+{\listtext	2.	}Edit 
+\f1 /etc/network/interfaces 
+\f0 and add the following:
+\f1 ######################################
+\f0 \uc0\u8232 
+\f1 auto lo\uc0\u8232 \u8232 iface lo inet loopback\u8232 iface eth0 inet dhcp\u8232 \u8232 auto wlan0\u8232 allow-hotplug wlan0\u8232 iface wlan0 inet dhcp\u8232 \'a0 \'a0wpa-scan-ssid 1\u8232 \'a0 \'a0wpa-ap-scan 1\u8232 \'a0 \'a0wpa-key-mgmt WPA-PSK\u8232 \'a0 \'a0wpa-proto RSN WPA\u8232 \'a0 \'a0wpa-pairwise CCMP TKIP\u8232 \'a0 \'a0wpa-group CCMP TKIP\u8232 \'a0 \'a0wpa-ssid <Your Wifi SSID>\u8232 \'a0 \'a0wpa-psk <Your PSK Value>\u8232 \u8232 iface default inet dhcp\u8232 ######################################
+\f0 \
+{\listtext	3.	}Save the changes and shutdown the Raspberry Pi.\
+{\listtext	4.	}Unplug the ethernet cable and plug in the Edimax\'a0EW-7811Un wifi dongle.\
+{\listtext	5.	}Power on the Raspberry PI and wait for the wireless to get a IP.\
+\pard\pardeftab720
+\cf2 My router statically maps a IP to the network interfaces MAC address, that is why I chose to allow Linux to run DHCP. \'a0If there are any issues, some helpful commands to detect hardware are the following:\
+\
+\pard\pardeftab720\qc
+{\field{\*\fldinst{HYPERLINK "https://www.evernote.com/shard/s35/sh/aecbe9ac-8357-4a67-afa0-94baa16b5c99/eb1c13fe028ef6ab6c5a377f1e29fdcf/deep/0/Screenshot%201/7/13%2010:24%20PM.jpg"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 13 10-24 PM.jpg.png \width16360 \height2580 \noorient
+}¬}}}\pard\pardeftab720\qc
+\cf3 \
+{\field{\*\fldinst{HYPERLINK "https://www.evernote.com/shard/s35/sh/f8feff18-7b83-4c6c-915e-4848d25312b7/51e406ec42f661c7734e6b0023305317/deep/0/Screenshot%201/7/13%2010:33%20PM.jpg"}}{\fldrslt 
+\f2\fs24 \cf0 {{\NeXTGraphic 13 10-33 PM.jpg.png \width12060 \height3220 \noorient
+}¬}}}\
+{\field{\*\fldinst{HYPERLINK "https://www.evernote.com/shard/s35/sh/82db5208-4e1d-4dac-a40e-dae2aaee1bd7/6c7b20342b95810979c4949e8a38bedb/deep/0/Screenshot%201/7/13%2010:35%20PM.jpg"}}{\fldrslt \
+
+\f2\fs24 \cf0 {{\NeXTGraphic 13 10-35 PM.jpg.png \width10440 \height4460 \noorient
+}¬}}}\
+\pard\pardeftab720
+\cf2 \
+}

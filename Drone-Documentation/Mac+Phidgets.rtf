@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red104\green56\blue33;\red137\green19\blue21;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs74 \cf0 \ul \ulc0 How to Setup Phidget Spatial 1044
+\fs44 \ulnone \
+
+\i Tested:
+\i0 \
+-Phidget Spatial 1044 3/3/3 High Resolution\
+-Mac OS X 10.8.2\
+-FreeBSD 9.0 Release\
+\
+
+\b \ul Mac
+\b0 \ulnone \
+1) Go to http://www.phidgets.com/docs/OS_-_OS_X#Quick_Downloads\
+2) Download "OS X Installer Download"\
+3) Run the installer\
+\
+4) Install Mac Ports\
+5) Install libusb\
+# sudo port install libusb\
+# sudo port install libusb-legacy\
+6) Go to the driver download folder\
+# ./configure\
+# make\
+# sudo make install\
+\
+7) Running project\
+i ) Add "/Library/Frameworks" to the "Framework Search Paths"\
+ii) Click on project "add files", and go to "/Library/Frameworks/Phidget21.framework\
+
+\fs24 \
+
+\fs44 \
+Running Application with code\
+In your header or C file, make sure to include this for mac:\
+\pard\tx866\pardeftab866\pardirnatural
+
+\f1\fs36 \cf2 \CocoaLigature0 #include \cf3 <Phidget21/phidget21.h>}

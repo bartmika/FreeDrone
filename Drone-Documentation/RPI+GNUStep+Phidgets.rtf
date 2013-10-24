@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww22000\viewh11020\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs36 \cf0 sudo apt-get install clang\
+sudo apt-get install gobjc\
+sudo apt-get install gnustep\
+sudo apt-get install gnustep-devel\
+sudo apt-get install libobjc2\
+sudo apt-get install libdispatch0\
+\
+# Note:\
+# Before running anything, run this:\
+# . /usr/share/GNUstep/Makefiles/GNUstep.sh\
+\
+# Note: \
+# Before running an app, you'll need to create a "GNUmakefile". Example:\
+\
+\pard\tx864\pardeftab864\pardirnatural
+
+\fs24 \cf0 \CocoaLigature0 NUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles\
+include $(GNUSTEP_MAKEFILES)/common.make\
+\
+CC = clang\
+APP_NAME = TestDroneFoundation\
+TestDroneFoundation_OBJC_FILES = NSMutableArray+Queue.m TestNSMutableArray+Queue.m TestDroneFoundation.m\
+ADDITIONAL_CPPFLAGS += -I/usr/include/GNUstep -I/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include -I/usr/include/x86_64-linux-gnu\
+\
+include $(GNUSTEP_MAKEFILES)/application.make\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs36 \cf0 \CocoaLigature1 \
+# To run the app, simply run:\
+openapp ./TestDroneFoundation\
+\
+\
+\
+# Install Phidgets\
+#-----------------------------\
+sudo apt-get install libusb-dev\
+wget http://www.phidgets.com/downloads/libraries/libphidget_2.1.8.20130320.tar.gz\
+tar -zxvf libphidget_2.1.8.20130320.tar.gz \
+cd lib*\
+./configure\
+make \
+sudo make install\
+cd ../\
+rm -R libphidget-2.1.8.20130320/\
+rm libphidget_2.1.8.20130320.tar.gz }
